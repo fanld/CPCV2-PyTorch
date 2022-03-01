@@ -23,7 +23,7 @@ def argparser():
     parser.add_argument('--print_interval',   type=int,   metavar='', default=500,        help="When print_option = 1, this determines how often to print")
     parser.add_argument('--model_name_ext',   type=str,   metavar='', default="",         help="Added to the end of the model name")
     
-    parser.add_argument('--download_dataset', action='store_true',                        help="Download the chosen dataset")
+    parser.add_argument('--download_dataset', action='store_true',    default='TRUE',     help="Download the chosen dataset")
     parser.add_argument('--patch_aug',        action='store_true',                        help="Apply path-based data augmentation as in CPC V2")
     parser.add_argument('--gray',             action='store_true',                        help="Convert to grayscale")
 
